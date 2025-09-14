@@ -2,8 +2,6 @@ import os
 import struct
 import hashlib
 import sys
-
-# Fix Python 3.8+ compatibility issues with PyCryptodome
 import time
 if not hasattr(time, 'clock'):
     time.clock = time.time
